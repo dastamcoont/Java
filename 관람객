@@ -1,0 +1,24 @@
+public class 관람객 {
+	
+	public void 괴롭히다(동물 불쌍한것){
+		
+		if(불쌍한것 instanceof 까치){
+			System.out.println("까치를 괴롭");
+			불쌍한것.울다();
+		}
+		else if(불쌍한것 instanceof 사자){
+			System.out.println("사자를 괴롭혀");
+			불쌍한것.울다();	
+		}
+		else{
+			불쌍한것.울다();	
+		}
+		System.out.println();
+	}
+	
+	public void 먹이를주다(동물 아무동물){
+		System.out.println(아무동물.이름얻기()+"에게 먹이를 줍니다.");
+		아무동물.먹다();
+		System.out.println();
+	}
+}
