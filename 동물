@@ -1,0 +1,43 @@
+import java.io.Serializable;
+
+public class 동물 implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	public int 다리수;
+	public String 식성;
+	public String 성별;
+	String 이름;
+	
+	public 동물(){
+		this(4,"잡식성", "암");
+		
+	}
+	
+	동물(int 다리수, String 식성, String 성별){
+		this.다리수 = 다리수;
+		this.식성 = 식성;
+		this.성별 = 성별;
+		this.이름 = "동물";
+	}
+	
+	public String 이름얻기(){
+		return 이름;
+	}
+	
+	public void 먹다(){
+		System.out.println("우적우적");	
+	}
+	
+	public void 자다(){
+		System.out.println("zz...");
+	}
+	
+	public void 울다(){
+		System.out.println("ㅠㅠ");
+	}
+	
+	
+}
