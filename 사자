@@ -1,0 +1,27 @@
+public class 사자 extends 동물 {
+	
+	boolean 갈기;
+	
+	사자(){
+		this(true);
+	}
+	
+	사자(boolean 갈기){
+		super(4, "육식성", "수");
+		this.갈기 = 갈기;
+		this.이름 = "사자";
+	}
+	
+	public void 사냥하다(){
+		System.out.println("사자사냥하다");
+	}
+	
+	@Override
+	public void 울다(){
+		System.out.println("사자울다");
+	}
+	
+	public void 내식성을알려줘(){
+		System.out.println("내 식성은 "+ 식성 + "이야.");
+	}
+}
