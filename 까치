@@ -1,0 +1,20 @@
+public class 까치 extends 동물 {
+
+	까치(){
+		super(2,"잡식성","수");
+		this.이름= "까치";
+	}
+	public void 날다(){
+		System.out.println("푸드덕");
+	}
+	
+	@Override
+	public void 울다(){
+		System.out.println("까악 ㅠ");
+	}
+	
+	@Override
+	public void 먹다(){
+		System.out.println("까먹");
+	}
+}
