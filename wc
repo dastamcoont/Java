@@ -1,0 +1,6 @@
+ 워드카운터 예제
+$ hadoop fs -put /home/hadoop/download/moon.txt input
+$ hadoop jar /opt/hadoop/hadoop/hadoop-examples-1.2.1.jar wordcount input/moon.txt output2
+$ hadoop fs -cat output2/part-r-00000
+$ hadoop fs -get output2/part-r-00000 ~/result2.txt
+
