@@ -57,7 +57,7 @@ public class baseball {
 	}
 
 // 중복되지 않는 랜덤한 세자리수를 생성하는 함수
- public static int get_not_duplicated_three_digit_number(){
+	 private static int get_not_duplicated_three_digit_number(){
 
 		ArrayList<Integer> ranNumber = new ArrayList<Integer>();
 		for(int i=0; i < 10 ; i++){
@@ -72,7 +72,7 @@ public class baseball {
 	}
 
 // 사용자가 입력한 값을 랜덤한 3자리 수와 비교하여 Strike수와 Ball수를 리턴하는 함수
-	public static List<Integer> get_strikes_or_ball(String input, String rand){
+	private static List<Integer> get_strikes_or_ball(String input, String rand){
 		List<Integer> countList = new ArrayList<Integer>();
 		char[] input_arr = input.toCharArray();
 		char[] ran_arr = rand.toCharArray();
